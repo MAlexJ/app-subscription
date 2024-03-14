@@ -1,0 +1,25 @@
+server:
+  port: ${SERVICE_PORT:8080}
+
+spring:
+  config:
+    import: optional:file:.env[.properties]
+  application:
+    name: ${SERVICE_NAME:app-subscription}
+  data:
+    mongodb:
+      uri: ${SERVICE_MONGODB_URI:uri}
+      database: ${SERVICE_MONGODB_DATABASE:app-subscription-db}
+      auto-index-creation: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+
+jwt:
+  app:
+    provide_security: ${SERVICE_PROVIDE_JWT_SECURITY:true}
+    secret: ${SERVICE_JWT_SECRET_KEY:jwt_key}

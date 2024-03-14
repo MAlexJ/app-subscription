@@ -1,0 +1,29 @@
+###
+GET http://localhost:8083/v1/subscriptions
+
+###
+GET http://localhost:8083/v1/subscriptions?active=true
+
+###
+GET http://localhost:8083/v1/subscriptions?type=rss
+
+###
+GET http://localhost:8083/v1/subscriptions?type=rss&active=true
+
+###
+POST http://localhost:8083/v1/subscriptions
+Content-Type: application/json
+
+{
+  "chatId": -2,
+  "templateId": "qweqwrwq",
+  "type": "RSS",
+  "context": {
+    "url": "qqqq"
+  },
+  "filter": {},
+  "isActive": true
+}
+
+###
+PATCH http://localhost:8083/v1/subscriptions/65f358a6f57a2b122253118f
