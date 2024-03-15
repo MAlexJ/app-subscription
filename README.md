@@ -7,10 +7,10 @@ Subscription service
 #### Projects:
 
 * Message templates service: https://github.com/MAlexJ/app-message-templates
-* Subscription service: 
+* Subscription service: https://github.com/MAlexJ/app-subscription
 * Telegram bot service: https://github.com/MAlexJ/springboot-telegram-bot
-* Rss service:https://github.com/MAlexJ/springboot-rss
-* Publisher service: https://github.com/MAlexJ/springboot-publisher
+* Rss service:
+* Publisher service:
 
 ### Springboot project setup
 
